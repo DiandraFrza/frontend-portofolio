@@ -32,7 +32,7 @@ Ini adalah website portofolio pribadi sederhana (versi frontend) yang dibuat men
 ## 🛠️ Cara Menjalankan
 1. Clone repository:
    ```bash
-   git clone https://github.com/username/repo-ini.git
+   git clone https://github.com/DiandraFrza/frontend-portofolio.git
    ```
 2. Buka `index.html` langsung di browser.
 
@@ -42,12 +42,10 @@ Ini adalah website portofolio pribadi sederhana (versi frontend) yang dibuat men
 
 ## 📸 Preview
 
-![Preview Website](preview.png)
+![Preview Website](/assets/preview.png)
 
 ## ✨ Author
 
 - **Diandra Firza Nasywan (DiandrFrzaa)**
 - Email: diandraafirzanasywan@gmail.com
-- LinkedIn: (https://linkedin.com/in/diandra-firza-nasywan) | Demo: (portofolio-firza.publicvm.com)
-
-```
+- LinkedIn: (https://linkedin.com/in/diandra-firza-nasywan) | Demo: (https://firza.vercel.app)

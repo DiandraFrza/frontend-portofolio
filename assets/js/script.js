@@ -8,10 +8,10 @@ hamburger.addEventListener('click', () => {
 
 
 
-  AOS.init({
-    duration: 1000, // durasi animasi dalam ms
-    once: true // animasi hanya terjadi sekali
-  });
+AOS.init({
+   duration: 1000, // durasi animasi dalam ms
+   once: true // animasi hanya terjadi sekali
+});
 
 
 

@@ -23,24 +23,24 @@
 
 <body class="overflow-x-hidden">
   <!-- Header Start -->
-  <header class="fixed top-0 left-0 z-20 flex w-full items-center bg-white/30 backdrop-blur dark:bg-slate-900/30">
+  <header class="fixed top-0 left-0 z-20 flex w-full items-center bg-white/30 backdrop-blur bg-slate-900/30">
     <div class="container mx-auto px-4 py-4">
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <a href="#home" class="text-xl font-bold" data-aos="fade-right">
-          <span class="text-neutral-300">Diandr</span><span class="text-neutral-900 dark:text-white">Frzaa.</span>
+          <span class="text-neutral-300">Diandr</span><span class="text-neutral-900 text-white">Frzaa.</span>
         </a>
 
         <!-- Hamburger -->
         <button id="hamburger" class="relative z-[9999] lg:hidden" data-aos="fade-left">
-          <span class="hamburger-line block w-6 h-0.5 bg-black dark:bg-white my-1 transition"></span>
-          <span class="hamburger-line block w-6 h-0.5 bg-black dark:bg-white my-1 transition"></span>
-          <span class="hamburger-line block w-6 h-0.5 bg-black dark:bg-white my-1 transition"></span>
+          <span class="hamburger-line block w-6 h-0.5 bg-black my-1 transition"></span>
+          <span class="hamburger-line block w-6 h-0.5 bg-black my-1 transition"></span>
+          <span class="hamburger-line block w-6 h-0.5 bg-black my-1 transition"></span>
         </button>
 
         <!-- Nav -->
         <nav id="nav-menu"
-          class="absolute top-full right-4 hidden w-48 rounded-lg bg-white shadow-lg dark:bg-slate-800 lg:static lg:block lg:w-auto lg:shadow-none lg:bg-transparent dark:lg:bg-transparent"
+          class="absolute top-full right-4 hidden w-48 rounded-lg bg-white shadow-lg lg:static lg:block lg:w-auto lg:shadow-none lg:bg-transparent lg:bg-transparent"
           data-aos="fade-left">
           <ul class="flex flex-col lg:flex-row items-start lg:items-center gap-4 p-4 lg:p-0">
             <li><a href="#home"
@@ -55,17 +55,6 @@
             <li><a href="#contact"
                 class="gap-2 text-base font-semibold text-dark py-1 px-2 hover:gap-2 hover:rounded-md hover:bg-gray-800 hover:py-1 hover:px-2 hover:text-base hover:font-semibold hover:text-white">Contact</a>
             </li>
-            <!-- <li class="flex items-center gap-2 mt-2 lg:mt-0">
-              <span class="text-sm text-slate-500">Light</span>
-              <label for="dark-toggle" class="cursor-pointer">
-                <div class="relative">
-                  <input type="checkbox" id="dark-toggle" class="sr-only" />
-                  <div class="block h-5 w-10 rounded-full bg-gray-500"></div>
-                  <div class="dot absolute left-1 top-1 h-3 w-3 rounded-full bg-white transition"></div>
-                </div>
-              </label>
-              <span class="text-sm text-slate-500">Dark</span>
-            </li> -->
           </ul>
         </nav>
       </div>
@@ -75,7 +64,7 @@
 
   <main class="pt-24 px-4">
     <!-- Hero Section Start -->
-    <section id="home" class="dark:bg-dark min-h-screen flex items-center">
+    <section id="home">
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap items-center">
           <!-- Kiri: Teks -->
@@ -86,7 +75,7 @@
 
             <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-primary mb-6" data-aos="flip-up">
               <span class="text-gray-300">Fresh Graduate,</span><br>
-              <span class="text-black dark:text-white">Junior Web Developer,</span><br>
+              <span class="text-black">Junior Web Developer,</span><br>
               <span class="text-gray-300">Game Development</span>
             </h1>
 
@@ -126,7 +115,7 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="py-16 px-4 bg-white dark:bg-dark">
+    <section id="about" class="py-16 px-4 bg-white">
       <div class="container">
         <div class="w-full px-4">
           <h2 class="mb-4 text-3xl font-bold text-primary sm:text-4xl" data-aos="fade-up">About Me</h2>
@@ -154,91 +143,85 @@
 
         <!-- Skills Section -->
         <div class="mt-10 px-4">
-          <h3 class="mb-4 text-xl font-semibold text-dark dark:text-white" data-aos="flip-down">Tech Skills</h3>
+          <h3 class="mb-4 text-xl font-semibold text-dark" data-aos="flip-down">Tech Skills</h3>
           <div class="flex flex-wrap items-center gap-4" data-aos="fade-left">
             <div style="background-color: #D0B684; color: black;"
-              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
+              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2">
               <img src="assets/img/icon/html5.svg" alt="HTML Icon" class="w-5 h-5" />
               HTML
             </div>
             <div style="background-color: #D0B684; color: black;"
-              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
+              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2">
               <img src="assets/img/icon/css3.svg" alt="HTML Icon" class="w-5 h-5" />CSS
             </div>
             <div style="background-color: #D0B684; color: black;"
-              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
+              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2">
               <img src="assets/img/icon/php.svg" alt="HTML Icon" class="w-5 h-5" />PHP
             </div>
             <div style="background-color: #D0B684; color: black;"
-              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
+              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2">
               <img src="assets/img/icon/javascript.svg" alt="HTML Icon" class="w-5 h-5" />
               JavaScript
             </div>
             <div style="background-color: #D0B684; color: black;"
-              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
+              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2">
               <img src="assets/img/icon/git.svg" alt="HTML Icon" class="w-5 h-5" />
               Git
             </div>
             <div style="background-color: #D0B684; color: black;"
-              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
+              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2">
               <img src="assets/img/icon/github.svg" alt="HTML Icon" class="w-5 h-5" />
               GitHub
             </div>
             <div style="background-color: #D0B684; color: black;"
-              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
+              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2">
               <img src="assets/img/icon/codeigniter.svg" alt="HTML Icon" class="w-5 h-5" />
               CodeIgniter
             </div>
             <div style="background-color: #D0B684; color: black;"
-              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
+              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2">
               <img src="assets/img/icon/laravel.svg" alt="HTML Icon" class="w-5 h-5" />
               Laravel
             </div>
             <div style="background-color: #D0B684; color: black;"
-              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
+              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2">
               <img src="assets/img/icon/gamemaker.svg" alt="HTML Icon" class="w-5 h-5" />
               GameMaker Studio
             </div>
             <div style="background-color: #D0B684; color: black;"
-              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
+              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2">
               <img src="assets/img/icon/pwn.svg" alt="HTML Icon" class="w-5 h-5" />pwn
               In GTA SAMP Server
             </div>
             <div style="background-color: #D0B684; color: black;"
-              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
+              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2">
               <img src="assets/img/icon/mysql.svg" alt="HTML Icon" class="w-5 h-5" />MySQL
             </div>
           </div>
 
           <!-- Garis Pemisah -->
-          <div class="w-full h-px bg-gray-300 dark:bg-gray-600 my-4"></div>
+          <div class="mt-6 mb-4 w-full h-px bg-gray-300"></div>
 
-          <h3 class="mt-6 mb-4 text-xl font-semibold text-dark dark:text-white" data-aos="flip-down">Tools</h3>
+          <h3 class="mt-6 mb-4 text-xl font-semibold text-dark" data-aos="flip-down">Tools</h3>
           <div class="flex flex-wrap items-center gap-4" data-aos="fade-right">
-            <div
-              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
+            <div class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2">
               <img src="assets/img/icon/figma.svg" alt="HTML Icon" class="w-5 h-5" />FIGMA
             </div>
-            <div
-              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
+            <div class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2">
               <img src="assets/img/icon/canva.svg" alt="HTML Icon" class="w-5 h-5" />CANVA
             </div>
-            <div
-              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
+            <div class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2">
               <img src="assets/img/icon/libreofficewriter.svg" alt="HTML Icon" class="w-5 h-5" />MS
               Word
             </div>
-            <div
-              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
+            <div class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2">
               <img src="assets/img/icon/libreofficecalc.svg" alt="HTML Icon" class="w-5 h-5" />MS
               Excel
             </div>
-            <div
-              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
+            <div class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2">
               <img src="assets/img/icon/laragon.svg" alt="HTML Icon" class="w-5 h-5" />Laragon
             </div>
-            <div
-              class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
+            <div class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2">
               <img src="assets/img/icon/xampp.svg" alt="HTML Icon" class="w-5 h-5" />XAMPP
             </div>
           </div>
@@ -249,18 +232,18 @@
 
     <section id="project" class="py-16 px-4">
       <div class="text-center mb-12" data-aos="fade-down">
-        <h2 class="text-3xl font-bold text-dark dark:text-white">My Projects</h2>
-        <p class="mt-2 text-base text-slate-500 dark:text-slate-300">Beberapa karya yang pernah gue buat dengan sepenuh
+        <h2 class="text-3xl font-bold text-dark">My Projects</h2>
+        <p class="mt-2 text-base text-slate-500">Beberapa karya yang pernah gue buat dengan sepenuh
           hati.</p>
       </div>
 
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         <!-- Project Card -->
-        <div class="rounded-xl bg-slate-100 dark:bg-slate-800 p-4 shadow-md" data-aos="fade-down">
+        <div class="rounded-xl bg-slate-100 p-4 shadow-md" data-aos="fade-down">
           <img src="assets/img/project/laundryapp.png" alt="LaundryApp" class="mb-4 w-full h-48 object-cover rounded-lg"
             data-aos="zoom-in" />
-          <h3 class="text-xl font-semibold text-dark dark:text-white" data-aos="flip-up" />LaundryApp</h3>
-          <p class="text-sm mt-2 text-slate-600 dark:text-slate-300" data-aos="flip-up" />
+          <h3 class="text-xl font-semibold text-dark" data-aos="flip-up" />LaundryApp</h3>
+          <p class="text-sm mt-2 text-slate-600" data-aos="flip-up" />
           Aplikasi laundry berbasis web dengan 3 role (Admin, Owner, Member). Dibuat pakai Laravel 11.
           </p>
           <p class="mt-2 text-xs text-slate-500" data-aos="flip-up" />Tech: Laravel 11, Breeze, Tailwind</p>
@@ -271,11 +254,11 @@
         </div>
       </div>
       <!-- Project Card -->
-      <div class="rounded-xl bg-slate-100 dark:bg-slate-800 p-4 shadow-md" data-aos="fade-down">
+      <div class="rounded-xl bg-slate-100 p-4 shadow-md" data-aos="fade-down">
         <img src="assets/img/project/.png" alt="Aventura Arcana Preview"
           class="mb-4 w-full h-48 object-cover rounded-lg" data-aos="zoom-in" />
-        <h3 class="text-xl font-semibold text-dark dark:text-white" data-aos="flip-up" />Aventura Arcana</h3>
-        <p class="text-sm mt-2 text-slate-600 dark:text-slate-300" data-aos="flip-up" />
+        <h3 class="text-xl font-semibold text-dark" data-aos="flip-up" />Aventura Arcana</h3>
+        <p class="text-sm mt-2 text-slate-600" data-aos="flip-up" />
         Game 2D platformer
         </p>
         <p class="mt-2 text-xs text-slate-500" data-aos="flip-up" />Tech: GameMaker Studio, Aseprite</p>
@@ -286,11 +269,11 @@
       </div>
       </div>
       <!-- Project Card -->
-      <div class="rounded-xl bg-slate-100 dark:bg-slate-800 p-4 shadow-md" data-aos="fade-down">
+      <div class="rounded-xl bg-slate-100 p-4 shadow-md" data-aos="fade-down">
         <img src="assets/img/project/DUMMY.png" alt="DUMMY" class="mb-4 w-full h-48 object-cover rounded-lg"
           data-aos="zoom-in" />
-        <h3 class="text-xl font-semibold text-dark dark:text-white" data-aos="flip-up" />Game Fighting JavaScript</h3>
-        <p class="text-sm mt-2 text-slate-600 dark:text-slate-300" data-aos="flip-up" />
+        <h3 class="text-xl font-semibold text-dark" data-aos="flip-up" />Game Fighting JavaScript</h3>
+        <p class="text-sm mt-2 text-slate-600" data-aos="flip-up" />
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
         <p class="mt-2 text-xs text-slate-500" data-aos="flip-up" />Tech: JavaScript, xxxx</p>
@@ -300,11 +283,11 @@
       </div>
       </div>
       <!-- Project Card -->
-      <div class="rounded-xl bg-slate-100 dark:bg-slate-800 p-4 shadow-md" data-aos="fade-down">
+      <div class="rounded-xl bg-slate-100 p-4 shadow-md" data-aos="fade-down">
         <img src="assets/img/project/DUMMY.png" alt="DUMMY" class="mb-4 w-full h-48 object-cover rounded-lg"
           data-aos="zoom-in" />
-        <h3 class="text-xl font-semibold text-dark dark:text-white" data-aos="flip-up" />DUMMY</h3>
-        <p class="text-sm mt-2 text-slate-600 dark:text-slate-300" data-aos="flip-up" />
+        <h3 class="text-xl font-semibold text-dark" data-aos="flip-up" />DUMMY</h3>
+        <p class="text-sm mt-2 text-slate-600" data-aos="flip-up" />
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
         <p class="mt-2 text-xs text-slate-500" data-aos="flip-up" />Tech: Lorem ipsum dolor.</p>
@@ -314,11 +297,11 @@
       </div>
       </div>
       <!-- Project Card -->
-      <div class="rounded-xl bg-slate-100 dark:bg-slate-800 p-4 shadow-md" data-aos="fade-down">
+      <div class="rounded-xl bg-slate-100 p-4 shadow-md" data-aos="fade-down">
         <img src="assets/img/project/DUMMY.png" alt="DUMMY" class="mb-4 w-full h-48 object-cover rounded-lg"
           data-aos="zoom-in" />
-        <h3 class="text-xl font-semibold text-dark dark:text-white" data-aos="flip-up" />DUMMY</h3>
-        <p class="text-sm mt-2 text-slate-600 dark:text-slate-300" data-aos="flip-up" />
+        <h3 class="text-xl font-semibold text-dark" data-aos="flip-up" />DUMMY</h3>
+        <p class="text-sm mt-2 text-slate-600" data-aos="flip-up" />
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
         <p class="mt-2 text-xs text-slate-500" data-aos="flip-up" />Tech: Lorem ipsum dolor.</p>
@@ -328,11 +311,11 @@
       </div>
       </div>
       <!-- Project Card -->
-      <div class="rounded-xl bg-slate-100 dark:bg-slate-800 p-4 shadow-md" data-aos="fade-down">
+      <div class="rounded-xl bg-slate-100 p-4 shadow-md" data-aos="fade-down">
         <img src="assets/img/project/DUMMY.png" alt="DUMMY" class="mb-4 w-full h-48 object-cover rounded-lg"
           data-aos="zoom-in" />
-        <h3 class="text-xl font-semibold text-dark dark:text-white" data-aos="flip-up" />DUMMY</h3>
-        <p class="text-sm mt-2 text-slate-600 dark:text-slate-300" data-aos="flip-up" />
+        <h3 class="text-xl font-semibold text-dark" data-aos="flip-up" />DUMMY</h3>
+        <p class="text-sm mt-2 text-slate-600" data-aos="flip-up" />
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
         <p class="mt-2 text-xs text-slate-500" data-aos="flip-up" />Tech: Lorem ipsum dolor.</p>
@@ -344,11 +327,12 @@
       </div>
     </section>
 
-    <!-- Contact Section Start -->
-    <section id="contact" class="py-16 px-4 dark:bg-slate-800">
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4">
       <div class="text-center mb-12" data-aos="fade-down">
-        <h2 class="text-3xl font-bold text-dark dark:text-white">Contact</h2>
-        <p class="mt-2 text-base text-slate-500 dark:text-slate-300">Lorem ipsum dolor, sit amet consectetur adipisicing
+        <h2 class="text-3xl font-bold text-dark">Contact</h2>
+        <p class="mt-2 text-base text-slate-500">Lorem ipsum dolor, sit amet consectetur adipisicing
           elit.</p>
       </div>
 
@@ -371,7 +355,7 @@
           </div>
           <div class="w-full px-4">
             <button data-aos="flip-down"
-              class="w-full rounded-full bg-gray-300 py-3 px-8 text-base font-semibold text-white transition duration-500 hover:bg-gray-800 hover:shadow-lg">Kirim</button>
+              class="w-full rounded-md bg-gray-300 py-3 px-8 text-base font-semibold text-white transition duration-500 hover:bg-gray-800 hover:shadow-lg">Kirim</button>
           </div>
         </div>
       </form>
@@ -381,9 +365,9 @@
   </main>
 
   <!-- Footer Start -->
-  <footer class="bg-slate-100 dark:bg-slate-800 py-2 px-4">
+  <footer class="bg-slate-100">
     <div class="flex flex-col md:flex-row items-center justify-between max-w-5xl mx-auto">
-      <p class="text-sm text-slate-600 dark:text-slate-300 mb-4 md:mb-0">© 2025 Diandra Firza. All rights reserved.</p>
+      <p class="text-sm text-slate-600 mb-4 md:mb-0">© 2025 Diandra Firza. All rights reserved.</p>
 
       <div class="flex space-x-4">
         <!-- GitHub -->
