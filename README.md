@@ -48,6 +48,6 @@ Ini adalah website portofolio pribadi sederhana (versi frontend) yang dibuat men
 
 - **Diandra Firza Nasywan (DiandrFrzaa)**
 - Email: diandraafirzanasywan@gmail.com
-- LinkedIn / IG / GitHub: (portofolio-firza.publicvm.com)
+- LinkedIn: (https://linkedin.com/in/diandra-firza-nasywan) | Demo: (portofolio-firza.publicvm.com)
 
 ```
