@@ -42,7 +42,7 @@ Ini adalah website portofolio pribadi sederhana (versi frontend) yang dibuat men
 
 ## 📸 Preview
 
-![Preview Website](assets/preview.png)
+![Preview Website](preview.png)
 
 ## ✨ Author
 
