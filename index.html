@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class=" scroll-smooth">
+<html lang="en" class="overflow-x-hidden">
 
 <head>
   <meta charset="UTF-8">
@@ -21,7 +21,7 @@
 
 </head>
 
-<body class="overflow-x-hidden">
+<body>
   <!-- Header Start -->
   <header class="fixed top-0 left-0 z-20 flex w-full items-center bg-white/30 backdrop-blur bg-slate-900/30">
     <div class="container mx-auto px-4 py-4">
@@ -32,10 +32,10 @@
         </a>
 
         <!-- Hamburger -->
-        <button id="hamburger" class="relative z-[9999] lg:hidden" data-aos="fade-left">
-          <span class="hamburger-line block w-6 h-0.5 bg-black my-1 transition"></span>
-          <span class="hamburger-line block w-6 h-0.5 bg-black my-1 transition"></span>
-          <span class="hamburger-line block w-6 h-0.5 bg-black my-1 transition"></span>
+        <button id="hamburger" class="relative z-[9999] lg:hidden group" data-aos="fade-left">
+          <span class="hamburger-line block w-6 h-0.5 bg-black my-1 transition duration-300 origin-top-left"></span>
+          <span class="hamburger-line block w-6 h-0.5 bg-black my-1 transition duration-300"></span>
+          <span class="hamburger-line block w-6 h-0.5 bg-black my-1 transition duration-300 origin-bottom-left"></span>
         </button>
 
         <!-- Nav -->
@@ -391,13 +391,29 @@
   <script>
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
+    const lines = hamburger.querySelectorAll(".hamburger-line");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+
+      // baris 1 rotate ke bawah (jadi garis atas dari X)
+      lines[0].classList.toggle("rotate-25");
+      lines[0].classList.toggle("translate-y-1");
+
+      // baris 2 menghilang
+      lines[1].classList.toggle("opacity-0");
+
+      // baris 3 rotate ke atas (jadi garis bawah dari X)
+      lines[2].classList.toggle("-rotate-25");
+      lines[2].classList.toggle("-translate-y-1");
+    });
 
     hamburger.addEventListener('click', () => {
       navMenu.classList.toggle('hidden');
     });
 
 
-
+    // animasi
     AOS.init({
       duration: 1000, // durasi animasi dalam ms
       once: true // animasi hanya terjadi sekali
