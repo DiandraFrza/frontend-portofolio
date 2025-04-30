@@ -8,21 +8,31 @@
   <link rel="icon" href="assets/f.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="assets/css/style.css" rel="stylesheet" />
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // durasi animasi dalam ms
+      once: true // animasi hanya terjadi sekali
+    });
+  </script>
 
 </head>
 
-<body>
+<body class="overflow-x-hidden">
   <!-- Header Start -->
   <header class="fixed top-0 left-0 z-20 flex w-full items-center bg-white/30 backdrop-blur dark:bg-slate-900/30">
     <div class="container mx-auto px-4 py-4">
       <div class="flex items-center justify-between">
         <!-- Logo -->
-        <a href="#home" class="text-xl font-bold">
+        <a href="#home" class="text-xl font-bold" data-aos="fade-right">
           <span class="text-neutral-300">Diandr</span><span class="text-neutral-900 dark:text-white">Frzaa.</span>
         </a>
 
         <!-- Hamburger -->
-        <button id="hamburger" class="relative z-[9999] lg:hidden">
+        <button id="hamburger" class="relative z-[9999] lg:hidden" data-aos="fade-left">
           <span class="hamburger-line block w-6 h-0.5 bg-black dark:bg-white my-1 transition"></span>
           <span class="hamburger-line block w-6 h-0.5 bg-black dark:bg-white my-1 transition"></span>
           <span class="hamburger-line block w-6 h-0.5 bg-black dark:bg-white my-1 transition"></span>
@@ -30,7 +40,8 @@
 
         <!-- Nav -->
         <nav id="nav-menu"
-          class="absolute top-full right-4 hidden w-48 rounded-lg bg-white shadow-lg dark:bg-slate-800 lg:static lg:block lg:w-auto lg:shadow-none lg:bg-transparent dark:lg:bg-transparent">
+          class="absolute top-full right-4 hidden w-48 rounded-lg bg-white shadow-lg dark:bg-slate-800 lg:static lg:block lg:w-auto lg:shadow-none lg:bg-transparent dark:lg:bg-transparent"
+          data-aos="fade-left">
           <ul class="flex flex-col lg:flex-row items-start lg:items-center gap-4 p-4 lg:p-0">
             <li><a href="#home"
                 class="gap-2 text-base font-semibold text-dark py-1 px-2 hover:gap-2 hover:rounded-md hover:bg-gray-800 hover:py-1 hover:px-2 hover:text-base hover:font-semibold hover:text-white">Home</a>
@@ -44,7 +55,7 @@
             <li><a href="#contact"
                 class="gap-2 text-base font-semibold text-dark py-1 px-2 hover:gap-2 hover:rounded-md hover:bg-gray-800 hover:py-1 hover:px-2 hover:text-base hover:font-semibold hover:text-white">Contact</a>
             </li>
-            <li class="flex items-center gap-2 mt-2 lg:mt-0">
+            <!-- <li class="flex items-center gap-2 mt-2 lg:mt-0">
               <span class="text-sm text-slate-500">Light</span>
               <label for="dark-toggle" class="cursor-pointer">
                 <div class="relative">
@@ -54,7 +65,7 @@
                 </div>
               </label>
               <span class="text-sm text-slate-500">Dark</span>
-            </li>
+            </li> -->
           </ul>
         </nav>
       </div>
@@ -69,21 +80,21 @@
         <div class="flex flex-wrap items-center">
           <!-- Kiri: Teks -->
           <div class="w-full lg:w-1/2 mb-10 lg:mb-0">
-            <p class="text-base font-medium text-secondary mb-5">Hello! I’m <span
+            <p class="text-base font-medium text-secondary mb-5" data-aos="flip-up">Hello! I’m <span
                 class="gap-2 rounded-md bg-gray-800 py-1 px-2 text-base font-semibold text-white">Diandra
                 Firza</span></p>
 
-            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-primary mb-6">
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-primary mb-6" data-aos="flip-up">
               <span class="text-gray-300">Fresh Graduate,</span><br>
               <span class="text-black dark:text-white">Junior Web Developer,</span><br>
               <span class="text-gray-300">Game Development</span>
             </h1>
 
-            <p class="text-neutral-500 text-base md:text-lg font-medium mb-8">
+            <p class="text-neutral-500 text-base md:text-lg font-medium mb-8" data-aos="fade-right">
               Passion gue? Bikin hal kecil jadi luar biasa lewat teknologi dan ide liar.
             </p>
 
-            <a href="#contact"
+            <a href="#contact" data-aos="fade-up"
               class="inline-flex items-center gap-2 rounded-full bg-gray-800 py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">
               Let’s Talk <span>→</span>
             </a>
@@ -94,7 +105,8 @@
             <div class="relative mt-10 lg:mt-9 w-[300px] h-[450px] mx-auto">
               <!-- Blob -->
               <span class="absolute -bottom-10 -left-10 w-full h-full z-0">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full scale-125">
+                <svg data-aos="fade-left" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
+                  class="w-full h-full scale-125">
                   <path fill="#343534"
                     d="M39.6,-65.8C53.2,-60.7,67.4,-53.9,73.7,-42.7C80,-31.4,78.5,-15.7,76.3,-1.2C74.2,13.2,71.5,26.5,66.7,40.3C61.8,54,54.7,68.3,43.3,73.7C31.8,79.2,15.9,75.7,1.6,72.9C-12.7,70.1,-25.3,67.9,-37.5,62.9C-49.7,57.9,-61.3,50,-65.7,39.1C-70,28.1,-67,14.1,-66.1,0.5C-65.2,-13,-66.3,-26,-63.6,-39.7C-60.9,-53.5,-54.3,-68.1,-43,-74.5C-31.8,-80.8,-15.9,-79.1,-1.4,-76.6C13,-74.1,26,-70.8,39.6,-65.8Z"
                     transform="translate(100 100) scale(1.1)" />
@@ -102,7 +114,8 @@
               </span>
 
               <!-- Gambar -->
-              <img src="assets/me.png" alt="Diandra Firza" class="relative z-10 w-[300px] h-[450px] object-cover" />
+              <img src="assets/me.png" alt="Diandra Firza" class="relative z-10 w-[300px] h-[450px] object-cover"
+                data-aos="zoom-in" />
             </div>
           </div>
 
@@ -116,8 +129,8 @@
     <section id="about" class="py-16 px-4 bg-white dark:bg-dark">
       <div class="container">
         <div class="w-full px-4">
-          <h2 class="mb-4 text-3xl font-bold text-primary sm:text-4xl">About Me</h2>
-          <p class="mb-6 text-base font-medium text-secondary md:text-lg">
+          <h2 class="mb-4 text-3xl font-bold text-primary sm:text-4xl" data-aos="fade-up">About Me</h2>
+          <p class="mb-6 text-base font-medium text-secondary md:text-lg" data-aos="fade-right">
             Saya Diandra Firza Nasywan <span class="text-neutral-500">Junior Programming</span> — <br>Seorang fresh
             graduate dari SMK Citra Negara, jurusan
             Pengembangan Perangkat
@@ -128,68 +141,70 @@
             sederhana. Meskipun saya sadar, bahwa pemahaman & skill saya masih jauh dari kata sempurna. Akan tetapi saya
             akan terus belajar.
           </p>
-          <p class="text-sm italic text-neutral-500 mb-6">"Code is how I express ideas. Tech is how I shape them."</p>
+          <p class="text-sm italic text-neutral-500 mb-6" data-aos="fade-left">"Code is how I express ideas. Tech is how
+            I shape them."</p>
 
           <!-- Tombol Download CV -->
           <a href="#"
-            class="inline-block rounded-lg bg-gray-800 px-6 py-3 text-sm font-medium text-white transition duration-300 hover:bg-opacity-80">
+            class="inline-block rounded-lg bg-gray-800 px-6 py-3 text-sm font-medium text-white transition duration-300 hover:bg-opacity-80"
+            data-aos="fade-up">
             Download CV
           </a>
         </div>
 
         <!-- Skills Section -->
         <div class="mt-10 px-4">
-          <h3 class="mb-4 text-xl font-semibold text-dark dark:text-white">Tech Skills</h3>
-          <div class="flex flex-wrap items-center gap-4">
-            <div
+          <h3 class="mb-4 text-xl font-semibold text-dark dark:text-white" data-aos="flip-down">Tech Skills</h3>
+          <div class="flex flex-wrap items-center gap-4" data-aos="fade-left">
+            <div style="background-color: #D0B684; color: black;"
               class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
               <img src="assets/img/icon/html5.svg" alt="HTML Icon" class="w-5 h-5" />
               HTML
             </div>
-            <div
+            <div style="background-color: #D0B684; color: black;"
               class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
               <img src="assets/img/icon/css3.svg" alt="HTML Icon" class="w-5 h-5" />CSS
             </div>
-            <div
+            <div style="background-color: #D0B684; color: black;"
               class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
               <img src="assets/img/icon/php.svg" alt="HTML Icon" class="w-5 h-5" />PHP
             </div>
-            <div
+            <div style="background-color: #D0B684; color: black;"
               class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
               <img src="assets/img/icon/javascript.svg" alt="HTML Icon" class="w-5 h-5" />
               JavaScript
             </div>
-            <div
+            <div style="background-color: #D0B684; color: black;"
               class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
               <img src="assets/img/icon/git.svg" alt="HTML Icon" class="w-5 h-5" />
               Git
             </div>
-            <div
+            <div style="background-color: #D0B684; color: black;"
               class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
               <img src="assets/img/icon/github.svg" alt="HTML Icon" class="w-5 h-5" />
               GitHub
             </div>
-            <div
+            <div style="background-color: #D0B684; color: black;"
               class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
               <img src="assets/img/icon/codeigniter.svg" alt="HTML Icon" class="w-5 h-5" />
               CodeIgniter
             </div>
-            <div
+            <div style="background-color: #D0B684; color: black;"
               class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
               <img src="assets/img/icon/laravel.svg" alt="HTML Icon" class="w-5 h-5" />
               Laravel
             </div>
-            <div
+            <div style="background-color: #D0B684; color: black;"
               class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
               <img src="assets/img/icon/gamemaker.svg" alt="HTML Icon" class="w-5 h-5" />
               GameMaker Studio
             </div>
-            <div
+            <div style="background-color: #D0B684; color: black;"
               class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
               <img src="assets/img/icon/pwn.svg" alt="HTML Icon" class="w-5 h-5" />pwn
               In GTA SAMP Server
             </div>
-            <div
+            <div style="background-color: #D0B684; color: black;"
               class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
               <img src="assets/img/icon/mysql.svg" alt="HTML Icon" class="w-5 h-5" />MySQL
             </div>
@@ -198,8 +213,8 @@
           <!-- Garis Pemisah -->
           <div class="w-full h-px bg-gray-300 dark:bg-gray-600 my-4"></div>
 
-          <h3 class="mt-6 mb-4 text-xl font-semibold text-dark dark:text-white">Tools</h3>
-          <div class="flex flex-wrap items-center gap-4">
+          <h3 class="mt-6 mb-4 text-xl font-semibold text-dark dark:text-white" data-aos="flip-down">Tools</h3>
+          <div class="flex flex-wrap items-center gap-4" data-aos="fade-right">
             <div
               class="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2 dark:bg-slate-800 text-dark dark:text-white font-semibold">
               <img src="assets/img/icon/figma.svg" alt="HTML Icon" class="w-5 h-5" />FIGMA
@@ -233,7 +248,7 @@
     <!-- About Section End -->
 
     <section id="project" class="py-16 px-4">
-      <div class="text-center mb-12">
+      <div class="text-center mb-12" data-aos="fade-down">
         <h2 class="text-3xl font-bold text-dark dark:text-white">My Projects</h2>
         <p class="mt-2 text-base text-slate-500 dark:text-slate-300">Beberapa karya yang pernah gue buat dengan sepenuh
           hati.</p>
@@ -241,100 +256,103 @@
 
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         <!-- Project Card -->
-        <div class="rounded-xl bg-slate-100 dark:bg-slate-800 p-4 shadow-md">
-          <img src="assets/img/project/laundryapp.png" alt="LaundryApp"
-            class="mb-4 w-full h-48 object-cover rounded-lg" />
-          <h3 class="text-xl font-semibold text-dark dark:text-white">LaundryApp</h3>
-          <p class="text-sm mt-2 text-slate-600 dark:text-slate-300">
-            Aplikasi laundry berbasis web dengan 3 role (Admin, Owner, Member). Dibuat pakai Laravel 11.
+        <div class="rounded-xl bg-slate-100 dark:bg-slate-800 p-4 shadow-md" data-aos="fade-down">
+          <img src="assets/img/project/laundryapp.png" alt="LaundryApp" class="mb-4 w-full h-48 object-cover rounded-lg"
+            data-aos="zoom-in" />
+          <h3 class="text-xl font-semibold text-dark dark:text-white" data-aos="flip-up" />LaundryApp</h3>
+          <p class="text-sm mt-2 text-slate-600 dark:text-slate-300" data-aos="flip-up" />
+          Aplikasi laundry berbasis web dengan 3 role (Admin, Owner, Member). Dibuat pakai Laravel 11.
           </p>
-          <p class="mt-2 text-xs text-slate-500">Tech: Laravel 11, Breeze, Tailwind</p>
-          <div class="mt-4 flex gap-4">
-            <a href="https://laundryfrzaa.publicvm.com/" class="text-sm text-blue-500 hover:underline">Live Demo</a>
-            <a href="https://github.com/DiandraFrza/Laundryza.git"
-              class="text-sm text-blue-500 hover:underline">GitHub</a>
-          </div>
+          <p class="mt-2 text-xs text-slate-500" data-aos="flip-up" />Tech: Laravel 11, Breeze, Tailwind</p>
+          <div class="mt-4 flex gap-4" data-aos="fade-down" />
+          <a href="https://laundryfrzaa.publicvm.com/" class="text-sm text-blue-500 hover:underline">Live Demo</a>
+          <a href="https://github.com/DiandraFrza/Laundryza.git"
+            class="text-sm text-blue-500 hover:underline">GitHub</a>
         </div>
-        <!-- Project Card -->
-        <div class="rounded-xl bg-slate-100 dark:bg-slate-800 p-4 shadow-md">
-          <img src="assets/img/project/.png" alt="Aventura Arcana Preview"
-            class="mb-4 w-full h-48 object-cover rounded-lg" />
-          <h3 class="text-xl font-semibold text-dark dark:text-white">Aventura Arcana</h3>
-          <p class="text-sm mt-2 text-slate-600 dark:text-slate-300">
-            Game 2D platformer
-          </p>
-          <p class="mt-2 text-xs text-slate-500">Tech: GameMaker Studio, Aseprite</p>
-          <div class="mt-4 flex gap-4">
-            <a href="#" class="text-sm text-blue-500 hover:underline">Live Demo</a>
-            <a href="https://github.com/DiandraFrza/AventuraArcanaV0.8.git"
-              class="text-sm text-blue-500 hover:underline">GitHub</a>
-          </div>
-        </div>
-        <!-- Project Card -->
-        <div class="rounded-xl bg-slate-100 dark:bg-slate-800 p-4 shadow-md">
-          <img src="assets/img/project/DUMMY.png" alt="DUMMY" class="mb-4 w-full h-48 object-cover rounded-lg" />
-          <h3 class="text-xl font-semibold text-dark dark:text-white">Game Fighting JavaScript</h3>
-          <p class="text-sm mt-2 text-slate-600 dark:text-slate-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-          <p class="mt-2 text-xs text-slate-500">Tech: JavaScript, xxxx</p>
-          <div class="mt-4 flex gap-4">
-            <a href="" class="text-sm text-blue-500 hover:underline">Live Demo</a>
-            <a href="https://github.com/DiandraFrza/fightingJs.git"
-              class="text-sm text-blue-500 hover:underline">GitHub</a>
-          </div>
-        </div>
-        <!-- Project Card -->
-        <div class="rounded-xl bg-slate-100 dark:bg-slate-800 p-4 shadow-md">
-          <img src="assets/img/project/DUMMY.png" alt="DUMMY" class="mb-4 w-full h-48 object-cover rounded-lg" />
-          <h3 class="text-xl font-semibold text-dark dark:text-white">DUMMY</h3>
-          <p class="text-sm mt-2 text-slate-600 dark:text-slate-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-          <p class="mt-2 text-xs text-slate-500">Tech: Lorem ipsum dolor.</p>
-          <div class="mt-4 flex gap-4">
-            <a href="#" class="text-sm text-blue-500 hover:underline">Live Demo</a>
-            <a href="#" class="text-sm text-blue-500 hover:underline">GitHub</a>
-          </div>
-        </div>
-        <!-- Project Card -->
-        <div class="rounded-xl bg-slate-100 dark:bg-slate-800 p-4 shadow-md">
-          <img src="assets/img/project/DUMMY.png" alt="DUMMY" class="mb-4 w-full h-48 object-cover rounded-lg" />
-          <h3 class="text-xl font-semibold text-dark dark:text-white">DUMMY</h3>
-          <p class="text-sm mt-2 text-slate-600 dark:text-slate-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-          <p class="mt-2 text-xs text-slate-500">Tech: Lorem ipsum dolor.</p>
-          <div class="mt-4 flex gap-4">
-            <a href="#" class="text-sm text-blue-500 hover:underline">Live Demo</a>
-            <a href="#" class="text-sm text-blue-500 hover:underline">GitHub</a>
-          </div>
-        </div>
-        <!-- Project Card -->
-        <div class="rounded-xl bg-slate-100 dark:bg-slate-800 p-4 shadow-md">
-          <img src="assets/img/project/DUMMY.png" alt="DUMMY" class="mb-4 w-full h-48 object-cover rounded-lg" />
-          <h3 class="text-xl font-semibold text-dark dark:text-white">DUMMY</h3>
-          <p class="text-sm mt-2 text-slate-600 dark:text-slate-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-          <p class="mt-2 text-xs text-slate-500">Tech: Lorem ipsum dolor.</p>
-          <div class="mt-4 flex gap-4">
-            <a href="#" class="text-sm text-blue-500 hover:underline">Live Demo</a>
-            <a href="#" class="text-sm text-blue-500 hover:underline">GitHub</a>
-          </div>
-        </div>
+      </div>
+      <!-- Project Card -->
+      <div class="rounded-xl bg-slate-100 dark:bg-slate-800 p-4 shadow-md" data-aos="fade-down">
+        <img src="assets/img/project/.png" alt="Aventura Arcana Preview"
+          class="mb-4 w-full h-48 object-cover rounded-lg" data-aos="zoom-in" />
+        <h3 class="text-xl font-semibold text-dark dark:text-white" data-aos="flip-up" />Aventura Arcana</h3>
+        <p class="text-sm mt-2 text-slate-600 dark:text-slate-300" data-aos="flip-up" />
+        Game 2D platformer
+        </p>
+        <p class="mt-2 text-xs text-slate-500" data-aos="flip-up" />Tech: GameMaker Studio, Aseprite</p>
+        <div class="mt-4 flex gap-4" data-aos="fade-down" />
+        <a href="#" class="text-sm text-blue-500 hover:underline">Live Demo</a>
+        <a href="https://github.com/DiandraFrza/AventuraArcanaV0.8.git"
+          class="text-sm text-blue-500 hover:underline">GitHub</a>
+      </div>
+      </div>
+      <!-- Project Card -->
+      <div class="rounded-xl bg-slate-100 dark:bg-slate-800 p-4 shadow-md" data-aos="fade-down">
+        <img src="assets/img/project/DUMMY.png" alt="DUMMY" class="mb-4 w-full h-48 object-cover rounded-lg"
+          data-aos="zoom-in" />
+        <h3 class="text-xl font-semibold text-dark dark:text-white" data-aos="flip-up" />Game Fighting JavaScript</h3>
+        <p class="text-sm mt-2 text-slate-600 dark:text-slate-300" data-aos="flip-up" />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p class="mt-2 text-xs text-slate-500" data-aos="flip-up" />Tech: JavaScript, xxxx</p>
+        <div class="mt-4 flex gap-4" data-aos="fade-down" />
+        <a href="" class="text-sm text-blue-500 hover:underline">Live Demo</a>
+        <a href="https://github.com/DiandraFrza/fightingJs.git" class="text-sm text-blue-500 hover:underline">GitHub</a>
+      </div>
+      </div>
+      <!-- Project Card -->
+      <div class="rounded-xl bg-slate-100 dark:bg-slate-800 p-4 shadow-md" data-aos="fade-down">
+        <img src="assets/img/project/DUMMY.png" alt="DUMMY" class="mb-4 w-full h-48 object-cover rounded-lg"
+          data-aos="zoom-in" />
+        <h3 class="text-xl font-semibold text-dark dark:text-white" data-aos="flip-up" />DUMMY</h3>
+        <p class="text-sm mt-2 text-slate-600 dark:text-slate-300" data-aos="flip-up" />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p class="mt-2 text-xs text-slate-500" data-aos="flip-up" />Tech: Lorem ipsum dolor.</p>
+        <div class="mt-4 flex gap-4" data-aos="fade-down" />
+        <a href="#" class="text-sm text-blue-500 hover:underline">Live Demo</a>
+        <a href="#" class="text-sm text-blue-500 hover:underline">GitHub</a>
+      </div>
+      </div>
+      <!-- Project Card -->
+      <div class="rounded-xl bg-slate-100 dark:bg-slate-800 p-4 shadow-md" data-aos="fade-down">
+        <img src="assets/img/project/DUMMY.png" alt="DUMMY" class="mb-4 w-full h-48 object-cover rounded-lg"
+          data-aos="zoom-in" />
+        <h3 class="text-xl font-semibold text-dark dark:text-white" data-aos="flip-up" />DUMMY</h3>
+        <p class="text-sm mt-2 text-slate-600 dark:text-slate-300" data-aos="flip-up" />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p class="mt-2 text-xs text-slate-500" data-aos="flip-up" />Tech: Lorem ipsum dolor.</p>
+        <div class="mt-4 flex gap-4" data-aos="fade-down" />
+        <a href="#" class="text-sm text-blue-500 hover:underline">Live Demo</a>
+        <a href="#" class="text-sm text-blue-500 hover:underline">GitHub</a>
+      </div>
+      </div>
+      <!-- Project Card -->
+      <div class="rounded-xl bg-slate-100 dark:bg-slate-800 p-4 shadow-md" data-aos="fade-down">
+        <img src="assets/img/project/DUMMY.png" alt="DUMMY" class="mb-4 w-full h-48 object-cover rounded-lg"
+          data-aos="zoom-in" />
+        <h3 class="text-xl font-semibold text-dark dark:text-white" data-aos="flip-up" />DUMMY</h3>
+        <p class="text-sm mt-2 text-slate-600 dark:text-slate-300" data-aos="flip-up" />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p class="mt-2 text-xs text-slate-500" data-aos="flip-up" />Tech: Lorem ipsum dolor.</p>
+        <div class="mt-4 flex gap-4" data-aos="fade-down" />
+        <a href="#" class="text-sm text-blue-500 hover:underline">Live Demo</a>
+        <a href="#" class="text-sm text-blue-500 hover:underline">GitHub</a>
+      </div>
+      </div>
       </div>
     </section>
 
     <!-- Contact Section Start -->
     <section id="contact" class="py-16 px-4 dark:bg-slate-800">
-      <div class="text-center mb-12">
+      <div class="text-center mb-12" data-aos="fade-down">
         <h2 class="text-3xl font-bold text-dark dark:text-white">Contact</h2>
         <p class="mt-2 text-base text-slate-500 dark:text-slate-300">Lorem ipsum dolor, sit amet consectetur adipisicing
           elit.</p>
       </div>
 
-      <form>
+      <form data-aos="fade-right">
         <div class="w-full lg:mx-auto lg:w-2/3">
           <div class="mb-8 w-full px-4">
             <label for="name" class="text-base font-bold text-primary">Nama</label>
@@ -352,7 +370,7 @@
               class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
           </div>
           <div class="w-full px-4">
-            <button
+            <button data-aos="flip-down"
               class="w-full rounded-full bg-gray-300 py-3 px-8 text-base font-semibold text-white transition duration-500 hover:bg-gray-800 hover:shadow-lg">Kirim</button>
           </div>
         </div>
@@ -384,6 +402,8 @@
     </div>
   </footer>
   <script src="assets/js/script.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
