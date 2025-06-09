@@ -11,6 +11,12 @@ body {
   overflow-x: hidden;
 }
 
+.text {
+  transition: color 0.5s ease;
+}
+.text.active {
+  color: #000000; 
+}
 
 .hamburger-line {
       display: block;
