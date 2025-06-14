@@ -1,51 +1,12 @@
-# 🌐 Portfolio Website - DiandrFrzaa
+# React + Vite
 
-Ini adalah website portofolio pribadi sederhana (versi frontend) yang dibuat menggunakan:
-- ⚡ HTML
-- 🎨 Tailwind CSS
-- 🧠 JavaScript
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 🚀 Fitur Utama
-- Responsive layout (mobile-friendly)
-- Dark/Light mode toggle (BETA)
-- Sticky navbar
-- Hamburger menu untuk mobile view
+Currently, two official plugins are available:
 
-## 📂 Struktur Folder
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-```
-.
-├── index.html
-├── assets/
-│        └── img/
-│              └── icon/
-|                      └── (gambar)
-|              └── project/
-|                      └── (gambar)
-|        └── css/
-|               └── style.css
-|        └── js/
-|               └── script.js
+## Expanding the ESLint configuration
 
-```
-
-## 🛠️ Cara Menjalankan
-1. Clone repository:
-   ```bash
-   git clone https://github.com/DiandraFrza/frontend-portofolio.git
-   ```
-2. Buka `index.html` langsung di browser.
-
-## 🌙 Catatan
-- Ini masih versi frontend statis.
-- Rencana ke depan: akan diintegrasikan dengan backend menggunakan Laravel/Node/etc.
-
-## 📸 Preview
-
-![Preview Website](/assets/preview.png)
-
-## ✨ Author
-
-- **Diandra Firza Nasywan (DiandrFrzaa)**
-- Email: diandraafirzanasywan@gmail.com
-- LinkedIn: (https://linkedin.com/in/diandra-firza-nasywan) | Demo: (https://firza.vercel.app)
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
